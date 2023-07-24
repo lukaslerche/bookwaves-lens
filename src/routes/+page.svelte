@@ -95,10 +95,10 @@
 				<th>blockNo</th>
 				<td>2</td>
 				<td>3</td>
-				<td>4</td>
-				<td>5</td>
-				<td>6</td>
-				<td>7</td>
+				<td class="colored">4</td>
+				<td class="colored">5</td>
+				<td class="colored">6</td>
+				<td class="colored">7</td>
 				<td>8</td>
 				<td>9</td>
 			</tr>
@@ -106,10 +106,10 @@
 				<th>bits</th>
 				<td class="bits">00011001 11101001</td>
 				<td class="bits">00011001 11101001</td>
-				<td class="bits">00011001 11101001</td>
-				<td class="bits">00011001 11101001</td>
-				<td class="bits">00011001 11101001</td>
-				<td class="bits">00011001 11101001</td>
+				<td class="bits colored">00011001 11101001</td>
+				<td class="bits colored">00011001 11101001</td>
+				<td class="bits colored">00011001 11101001</td>
+				<td class="bits colored">00011001 11101001</td>
 				<td class="bits">00011001 11101001</td>
 				<td class="bits">00011001 11101001</td>
 			</tr>
@@ -117,23 +117,23 @@
 				<th>bytes</th>
 				<td>19 E9</td>
 				<td>19 E9</td>
-				<td>19 E9</td>
-				<td>19 E9</td>
-				<td>19 E9</td>
-				<td>19 E9</td>
+				<td class="colored">19 E9</td>
+				<td class="colored">19 E9</td>
+				<td class="colored">19 E9</td>
+				<td class="colored">19 E9</td>
 				<td>00 00</td>
 				<td>00 0{secured ? 1 : 0}</td>
 			</tr>
 			<tr>
 				<th>usage</th>
 				<td colspan="2">Bibliothekskennung (URN Code 40 enc)</td>
-				<td colspan="4">Mediennummer (als Zahl)</td>
+				<td colspan="4" class="colored">Mediennummer (als Zahl)</td>
 				<td colspan="2">Variablen (als Bitflags)</td>
 			</tr>
 			<tr>
 				<th>readable</th>
 				<td colspan="2">D E 2 9 0 PAD</td>
-				<td colspan="4">123456789</td>
+				<td colspan="4" class="colored">123456789</td>
 				<td colspan="2">gesichert</td>
 			</tr>
 		</tbody>
@@ -195,27 +195,27 @@
 				<th>blockNo</th>
 				<td>0</td>
 				<td>1</td>
-				<td>2</td>
-				<td>3</td>
+				<td class="colored">2</td>
+				<td class="colored">3</td>
 			</tr>
 			<tr>
 				<th>bits</th>
 				<td class="bits">00011001 11101001</td>
 				<td class="bits">00011001 11101001</td>
-				<td class="bits">00011001 11101001</td>
-				<td class="bits">00011001 11101001</td>
+				<td class="bits colored">00011001 11101001</td>
+				<td class="bits colored">00011001 11101001</td>
 			</tr>
 			<tr>
 				<th>bytes</th>
 				<td>19 E9</td>
 				<td>19 E9</td>
-				<td>19 E9</td>
-				<td>19 E9</td>
+				<td class="colored">19 E9</td>
+				<td class="colored">19 E9</td>
 			</tr>
 			<tr>
 				<th>usage</th>
 				<td colspan="2">Kill Password </td>
-				<td colspan="2">Access Password</td>
+				<td colspan="2" class="colored">Access Password</td>
 			</tr>
 		</tbody>
 	</table>
@@ -224,5 +224,8 @@
 <style>
 	.bits {
 		white-space: nowrap;
+	}
+	.colored {
+		background-color: var(--primary-focus);
 	}
 </style>
